@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\allan\Desktop\Projetos\Django tutorial\Udemy Projeto 3\venv"
+VIRTUAL_ENV="C:\Users\Allan\Desktop\Projetos Django\fusion-test\fusion-ads\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

@@ -1,4 +1,4 @@
-#!"c:\users\allan\desktop\projetos\django tutorial\udemy projeto 3\venv\scripts\python.exe"
+#!"c:\users\allan\desktop\projetos django\fusion-test\fusion-ads\venv\scripts\python.exe"
 # EASY-INSTALL-ENTRY-SCRIPT: 'static3==0.7.0','console_scripts','static'
 import re
 import sys
