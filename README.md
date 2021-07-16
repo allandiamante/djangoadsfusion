@@ -9,4 +9,4 @@ PostgreSQL
 E está upado na Heroku para melhor visualização.
 https://fusion-ads.herokuapp.com/
 
-OBS: a Heroku não armazena fotos quando registrada pela aplicação, então ficou ícones nas imagens que estavam no registro do banco de dados do servidor.
+OBS: a Heroku armazena momentaneamente fotos quando registrada pela aplicação, imagens antigas possuirá um ícone.
