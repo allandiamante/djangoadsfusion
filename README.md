@@ -10,3 +10,6 @@ E está upado na Heroku para melhor visualização.
 https://fusion-ads.herokuapp.com/
 
 OBS: a Heroku armazena momentaneamente fotos quando registrada pela aplicação, imagem antiga possuirá um ícone.
+
+Testes aplicados com Coverage e Mommy
+![image](https://user-images.githubusercontent.com/56898741/126888337-4b4ad871-9e13-43c0-9d8c-5399f488983a.png)
