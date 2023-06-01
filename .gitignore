@@ -1,13 +1,4 @@
-__pycache__
-
-*.*~
-
-*.pyc
-
-.env
-
-.idea
-
-template/*
-
-htmlcov/*
+*.env
+bin/
+lib/
+*.slite3

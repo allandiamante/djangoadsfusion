@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 import os
 import dj_database_url
+from decouple import config
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -26,7 +27,7 @@ SECRET_KEY = 'django-insecure-z-xlexvpt0o&6y6@a7ne$kj8!*=6^u7n@#bf61xi*0gho!%2%b
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app']
+ALLOWED_HOSTS = ['*','.vercel.app']
 
 
 # Application definition
@@ -89,17 +90,20 @@ WSGI_APPLICATION = 'fusion.wsgi.application'
 # }
 
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': '',
-        'USER': '',
-        'PASSWORD': '',
-        'HOST': '',
-        'PORT': '5432',
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'fusion',
+#         'USER': 'postgres',
+#         'PASSWORD': 'q8jt93nf',
+#         'HOST': 'localhost',
+#         'PORT': '5432',
 
-    }
-}
+#     }
+# }
+
+
+DATABASES['default'] = dj_database_url.config()
 
 # DATABASES = {
 #     'default': {
@@ -146,8 +150,11 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 MEDIA_URL = 'media/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+STATIC_ROOT = BASE_DIR / "staticfiles_build" / "static"
+MEDIA_ROOT = BASE_DIR / "staticfiles_build" / "media"
 
 # EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
