@@ -70,7 +70,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'fusion.wsgi.application'
+WSGI_APPLICATION = 'fusion.wsgi.app'
 
 
 # Database
