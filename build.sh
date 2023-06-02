@@ -2,8 +2,8 @@ echo "Building the project..."
 pip install -r requirements.txt
 
 echo "Make Migration..."
-python3.9 manage.py makemigrations --noinput
-python3.9 manage.py migrate --noinput
+python3 manage.py makemigrations --noinput
+python3 manage.py migrate --noinput
 
 echo "Collect Static..."
-python3.9 manage.py collectstatic --no-input
+python3 manage.py collectstatic --no-input
