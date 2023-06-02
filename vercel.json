@@ -20,7 +20,7 @@
         },
         {
             "src": "/(.*)",
-            "dest": "allandevlinks/wsgi.py"
+            "dest": "fusion/wsgi.py"
         }
     ]
 }
