@@ -1,4 +1,5 @@
-*.env
+.env/
+.env
 bin/
 lib/
 *.slite3
