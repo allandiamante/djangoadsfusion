@@ -55,7 +55,7 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'fusion.urls'
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
+
 
 TEMPLATES = [
     {
@@ -157,7 +157,7 @@ MEDIA_URL = 'media/'
 # MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 MEDIA_ROOT = BASE_DIR / "staticfiles_build" / "media"
-
+STATIC_ROOT = BASE_DIR / "staticfiles_build" / "static"
 # EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # Email produção
