@@ -53,6 +53,9 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'fusion.urls'
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
 
 TEMPLATES = [
     {
@@ -148,12 +151,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-STATIC_URL = '/static/'
+
 MEDIA_URL = 'media/'
 # STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-STATIC_ROOT = BASE_DIR / "staticfiles_build" / "static"
 MEDIA_ROOT = BASE_DIR / "staticfiles_build" / "media"
 
 # EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
