@@ -6,6 +6,7 @@ from .forms import ContatoForm
 from .models import Servico, Funcionario, Feature, Cliente
 
 class IndexView(FormView):
+    print("CAIU NO INDEXVIEW")
     template_name = 'index.html'
     form_class = ContatoForm
     success_url = reverse_lazy('index')
