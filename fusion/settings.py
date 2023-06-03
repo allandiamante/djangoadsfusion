@@ -25,9 +25,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-z-xlexvpt0o&6y6@a7ne$kj8!*=6^u7n@#bf61xi*0gho!%2%b'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -153,11 +153,11 @@ USE_TZ = True
 
 
 MEDIA_URL = 'media/'
-# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-MEDIA_ROOT = BASE_DIR / "staticfiles_build" / "media"
-STATIC_ROOT = BASE_DIR / "staticfiles_build" / "static"
+# MEDIA_ROOT = BASE_DIR / "staticfiles_build" / "media"
+# STATIC_ROOT = BASE_DIR / "staticfiles_build" / "static"
 # EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # Email produção
