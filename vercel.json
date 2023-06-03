@@ -15,12 +15,12 @@
 ],
     "routes": [
         {
-            "src": "/(.*)",
+            "src": "static/(.*)",
             "dest": "fusion/wsgi.py"
           },
           {
             "src": "/static/(.*)",
-            "dest": "/static/$1"
+            "dest": "fusion/wsgi.py"
           }
     ]
 }
