@@ -158,6 +158,7 @@ MEDIA_URL = 'media/'
 
 if os.environ.get("VERCEL"):
     STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+    MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # MEDIA_ROOT = BASE_DIR / "staticfiles_build" / "media"
 # STATIC_ROOT = BASE_DIR / "staticfiles_build" / "static"
