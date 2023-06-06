@@ -20,7 +20,7 @@
           },
           {
             "src": "/static/(.*)",
-            "dest": "fusion/wsgi.py"
+            "dest": "static/$1"
           }
     ]
 }
