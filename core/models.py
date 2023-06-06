@@ -1,21 +1,7 @@
 import uuid
 from django.db import models
-from django.contrib.auth.models import User
 from stdimage.models import StdImageField
 
-
-superuser = User(
-    username='allan',
-    email='allan@example.com',
-    is_staff=True,
-    is_superuser=True,
-)
-
-# Defina a senha do superusuário
-superuser.set_password('123456')
-
-# Salve o superusuário no banco de dados
-superuser.save()
 
 def get_file_path(_instance, filename):
     ext = filename.split('.')[-1]
